@@ -10,28 +10,56 @@
 <body>
   <!-- partial:index.partial.html -->
   <main id="main">
-  <h1 id="title">Volunteer Study Buddy</h1>
-  <p id="description">Register Your Interest</p>
-  
-  <form id="survey-form" action="https://www.test.com">
-    <input id="name" type="text" placeholder="Name" required>
-    <input id="email" type="text" placeholder="someone@example.com" required>
-    <input id="number" type="number">
+    <h1 id="title">Volunteer Study Buddy</h1>
+    <div class="flex-container">
+      <div class="form-div">
+        <p id="description">Register Your Interest</p>
+
+        <form id="survey-form" action="https://www.test.com">
+          <div class="name-group">
+            <label for="name" id="name-label">Name:</label>
+            <input id="name" type="text" placeholder="e.g. Joe Bloggs" required>
+          </div>
+          <div class="email-group">
+            <label for="email" id="email-label">Email Address:</label>
+            <input id="email" type="email" placeholder="someone@example.com" required>
+          </div>
+          <div class="number-group">
+            <label for="number" id="number-label">Age:</label>
+            <input id="number" type="number" placeholder="Please input your age between 16 - 120" min="16" max="120">
+          </div>
+          <!--
     <label for="radio">
       <input id="radio1" type="radio" name="radio1-radio2">Radio
     </label>
     <label for="checkbox"><input id="checkbox" type="checkbox" name="chkbox">Checkbox</label>
-    <input list="dropdown" name="list">
-    <datalist id="dropdown">
-      <option value="list 1"></option>
-        <option value="list 2"></option>
-        <option value="list 3"></option>
-    <label for="textArea"><textarea id="textArea" name="textArea" rows="4" cols="50">Optional</textarea>Provide More Information:</label>
-    </datalist> 
+    -->
+          <input list="dropdown" name="list">
+          <datalist id="dropdown">
+            <option value="list 1"></option>
+            <option value="list 2"></option>
+            <option value="list 3"></option>
+            <label for="textArea"><textarea id="textArea" name="textArea" rows="4" cols="50">Optional</textarea>Provide
+              More Information:</label>
+          </datalist>
 
 
-    <button id="submit" type="submit">Submit</button>
-  </form>
+          <button id="submit" type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="info-div">
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum
+          tortor
+          quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
+          Aenean
+          ultricies mi vitae est. Mauris placerat eleifend leo.
+          Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum
+          tortor
+          quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
+          Aenean
+          ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+      </div>
+    </div>
 
   </main>
   <!-- partial -->
@@ -41,4 +69,3 @@
 </body>
 
 </html>
-
