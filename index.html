@@ -10,10 +10,10 @@
 <body>
   <!-- partial:index.partial.html -->
   <main id="main">
-    <h1 id="title">Piano Lessons</h1>
+    <h1 id="title">Piano Academy Form</h1>
     <p id="description">Thank you for taking interest in our piano lesson offerings.<br>
       Please answer a few questions for us to better understand what you are after.</p>
-    <br><br>
+
     <div class="form-div">
       <form id="survey-form" action="https://www.test.com">
         <div class="name-group">
@@ -28,12 +28,13 @@
         <br>
         <div class="number-group">
           <label for="number" id="number-label">Age:</label>
-          <input id="number" type="number" placeholder="Please input your age between 16 - 120" min="5" max="120">
+          <input id="number" type="number" placeholder="5 years or older" min="5" max="150">
         </div>
         <br>
+        <br>
         <div class="level-dropdown-group">
-          <label for="playing-level-dropdown">What is your current piano playing level?</label>
-          <input id="playing-level-dropdown" list="dropdown" name="list">
+          <label id="piano-level-label" for="playing-level-dropdown">What is your current piano playing level?</label>
+          <input id="playing-level-dropdown" list="dropdown" name="list" placeholder="Select from the list">
           <datalist id="dropdown">
             <option value="Haven't Started"></option>
             <option value="Beginner"></option>
@@ -41,33 +42,35 @@
             <option value="Advanced"></option>
           </datalist>
         </div>
+        <br>
+
+        <p id="preferred-label">Preferred lesson size:</p>
+        <label class="radio-label">
+          <input name="radio-lesson" value="individual" type="radio" class="input-radio" />Individual</label><br>
+        <label class="radio-label">
+          <input name="radio-lesson" value="group (<5)" type="radio" class="input-radio" />Group (&#60;5)</label><br>
+        <label class="radio-label">
+          <input name="radio-lesson" value="group (5-10)" type="radio" class="input-radio" />Group (5-10)</label><br>
+        <label class="radio-label">
+          <input name="radio-lesson" value="group 10+" type="radio" class="input-radio" />Group 10+</label>
+        <br>
+        <br>
+
+        <p id="goals-label">What are your long-term piano playing goals?</p>
+        <p id="goals-sub-label"><i>(Tick all that applies)</i></p><br>
+        <label><input name="goal" value="new instrument" type="checkbox" class="input-checkbox" />Learn new musical instrument</label><br>
+        <label><input name="goal" value="playing favourite songs" type="checkbox" class="input-checkbox" />Play favorite songs</label><br>
+        <label><input name="goal" value="jam" type="checkbox" class="input-checkbox" />Jam with family/friends</label><br>
+        <label><input name="goal" value="group performance" type="checkbox" class="input-checkbox" />Perform in musical groups</label><br>
+        <label><input name="goal" value="concert" type="checkbox" class="input-checkbox" />Play at concerts</label><br>
+        <label><input name="goal" value="compose song" type="checkbox" class="input-checkbox" />Compose an original song</label><br>
+        <label><input name="goal" value="teach" type="checkbox" class="input-checkbox" />Teach others</label><br>
+        <br>  
         <div class="text-area-group">
-          <label for="textArea">Provide more information:<textarea id="textArea" name="textArea" rows="4"
-              cols="50">Optional</textarea></label>
+          <label id="multitext-label" for="textArea">Brief information about you music journey:<textarea id="textArea" name="textArea" rows="4"
+              cols="50">e.g. I started learning from YouTube tutorials about 3 years ago and would now like to play in a band. </textarea></label>
         </div>
-        <br>
-
-
-        <label for="radio"> Preferred lesson size:
-          <input id="radio" type="radio" name="radio-lesson">Individual
-          <input id="radio" type="radio" name="radio-lesson"> Group (&#60;5)
-          <input id="radio" type="radio" name="radio-lesson"> Group (5-10)
-          <input id="radio" type="radio" name="radio-lesson"> Group (10+)
-        </label>
-        <br>
-        <!--
-    <label for="checkbox"><input id="checkbox" type="checkbox" name="chkbox">Checkbox</label>
-    -->
-        <input list="dropdown-3" name="list">
-        <datalist id="dropdown-3">
-          <option value="list 1"></option>
-          <option value="list 2"></option>
-          <option value="list 3"></option>
-          <label for="textArea"><textarea id="textArea" name="textArea" rows="4" cols="50">Optional</textarea>Provide
-            More Information:</label>
-        </datalist>
-        <br>
-        <br>
+        <br><br>
         <button id="submit" type="submit">Submit</button>
       </form>
     </div>
