@@ -81,9 +81,10 @@ label, #preferred-label, #goals-label, #textArea {
     display: inline;
     padding: 0px 10px 0px 10px;
     border-width: 2px;
+    width: 90%;
 }
 
-#goals-sub-label, #goals-label{
+#goals-sub-label, #goals-label, #multitext-label{
     display:inline-block;
 }
 
@@ -114,11 +115,18 @@ label, #preferred-label, #goals-label, #textArea {
     border-radius: 5px;
 }
 
+@media screen 
+  and (min-device-width: 400px) 
+  and (orientation: portrait) {
+    .form-div{
+        /* width: 50%; */
+        width: 70%;
+    }
+    #textArea{
+        width: 280px;
+        height: 120px;
+        padding-right: 10px;
+        margin-left: 0px;
+    }
 
-/*Black background attribution:
- <a href="https://pngtree.com/free-backgrounds'">free background photos from Pngtree.com</a>*/
- /* Piano Key close up Photo by <a href="https://unsplash.com/@jplenio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Johannes Plenio</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  */
-
-/*Piano slant Photo by <a href="https://unsplash.com/@adkrob?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Rob Martinez</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  */
+}
