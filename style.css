@@ -78,13 +78,13 @@ label, #preferred-label, #goals-label, #textArea {
 
 #textArea{
     border-radius: 5px;
-    display: inline;
+    display: inline-block;
     padding: 0px 10px 0px 10px;
     border-width: 2px;
     width: 90%;
 }
 
-#goals-sub-label, #goals-label, #multitext-label{
+#goals-sub-label, #goals-label{
     display:inline-block;
 }
 
